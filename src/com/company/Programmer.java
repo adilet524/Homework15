@@ -1,7 +1,7 @@
 package com.company;
 
 public class Programmer extends Person{
-    private String companyName;
+    String companyName;
 
 
     @Override

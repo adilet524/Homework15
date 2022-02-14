@@ -1,8 +1,8 @@
 package com.company;
 
 public class Person {
-    private String name;
-    private String designation;
+    String name;
+    String designation;
 
     @Override
     public String toString() {

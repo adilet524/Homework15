@@ -1,7 +1,7 @@
 package com.company;
 
 public class Singer extends Person{
-    private String bandName;
+    String bandName;
 
     @Override
     public String toString() {
