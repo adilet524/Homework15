@@ -4,20 +4,15 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Person person = new Person();
-        person.setName("Ulan");
-        person.setDesignation("Football player");
+        Person person = new Person("Ulan", "Football player");
         System.out.println(person);
         person.eat();
         person.walk();
         person.learn();
         System.out.println("\n\n");
 
-        Programmer programmer = new Programmer();
 
-        programmer.setName("Adilet");
-        programmer.setDesignation("Programmer");
-        programmer.setCompanyName("Facebook");
+        Programmer programmer = new Programmer("Adilet", "Programmer", "Facebook");
         System.out.println(programmer);
         programmer.eat();
         programmer.walk();
@@ -26,11 +21,7 @@ public class Main {
         System.out.println("\n\n");
 
 
-        Dancer dancer = new Dancer();
-
-        dancer.setName("Bakyt");
-        dancer.setDesignation("Dancer");
-        dancer.setGroupName("SuperCrew");
+        Dancer dancer = new Dancer("Bakyt", "Dancer", "SuperCrew");
         System.out.println(dancer);
         dancer.eat();
         dancer.walk();
@@ -39,16 +30,13 @@ public class Main {
         System.out.println("\n\n");
 
 
-        Singer singer = new Singer();
-
-        singer.setName("Mirbek");
-        singer.setDesignation("Singer");
-        singer.setBandName("Black star");
+        Singer singer = new Singer("Mirbek", "Singer", "Black star");
         System.out.println(singer);
         singer.eat();
         singer.walk();
         singer.learn();
         singer.singing();
+        singer.playGitar();
 
     }
 }

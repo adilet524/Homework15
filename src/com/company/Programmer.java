@@ -1,8 +1,12 @@
 package com.company;
 
 public class Programmer extends Person{
-    String companyName;
+    private String companyName;
 
+    public Programmer(String name, String designation, String companyName) {
+        super(name, designation);
+        this.companyName = companyName;
+    }
 
     @Override
     public String toString() {

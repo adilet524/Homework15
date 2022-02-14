@@ -1,7 +1,12 @@
 package com.company;
 
 public class Singer extends Person{
-    String bandName;
+    private String bandName;
+
+    public Singer(String name, String designation, String bandName) {
+        super(name, designation);
+        this.bandName = bandName;
+    }
 
     @Override
     public String toString() {
@@ -11,6 +16,8 @@ public class Singer extends Person{
     public void singing() {
         System.out.println("Singing");
     }
+
+    public void playGitar() { System.out.println("Play gitar");}
 
     public String getBandName() {
         return bandName;
